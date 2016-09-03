@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <title>Dagatal</title>
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script>
+
+</script>
+<style>
+
+.week {
+  display: flex;
+}
+.eventsDiv {
+  display:flex;
+  height: 30%;
+  justify-content: flex-end;
+  padding: 5%;
+  border-right: 10%;
+}
+
+.dayDiv {
+  display: flex;
+  height: 70%;
+
+}
+.day {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.month {
+  max-width: 800px;
+  margin-left: 21%;
+}
+
+.week {
+  height: 80px;
+}
+
+.day {
+  color: black;
+  padding: 5px;
+  background-color: transparentize(white, 0.30);
+  height: 100%;
+  width: 14.28571%;
+}
+.firstHeadings {
+  width: 100%;
+  max-width: 800px;
+  margin-left: 21%;
+  margin-bottom: 30px;
+}
+.headings {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flow-direction: row;
+  max-width: 800px;
+  margin-left: 20%;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.dayHead {
+  float: left;
+  padding-left: 0%;
+}
+@media screen and (max-width: 600px) {
+  .month {
+  margin-left: 1%;
+  }
+  .firstHeadings {
+  
+  margin-left: 1%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="manudurTemp" data-bind="foreach: months">
+  <div class="firstHeadings" data-bind="html: header,attr:{id: serial}">
+  </div>
+  <div class="month" data-bind="foreach: weeks">
+  <div class="week" data-bind="foreach: days, style:{'margin-right':marginRight,'margin-left':marginLeft}">
+    <div class="day thumbnail" data-bind="style:{'background-color': tegund=='helgi'? 'rgba(255,0,0,0.05)':(tegund=='starfsdagur'? 'rgba(255,255,0,0.1)':(tegund=='kennsludagur'? 'rgba(0,255,0,0.1)':(tegund=='profadagur'? 'rgba(0,0,255,0.1)':'transparent'))),'border-color': month==$root.currMonth ? (day==$root.currDay ? 'blue': 'none'): 'none','border-width': month==$root.currMonth ? (day==$root.currDay ? '5px': '1px'): '1px'}">
+      <div class="dayDiv" data-bind="text: day">
+      </div>
+      <div class="eventsDiv" data-bind="foreach: specials">
+            <span data-bind="attr:{class: logo, title: title}" data-toggle="tooltip" data-placement="bottom">
+            </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/knockout-3.4.0.js"></script>
+<script src="js/gogn.js"></script>
+<script type="text/javascript">
+
+var Month = function(name, serial,year, weeks) {
+	this.name = name;
+	this.serial = serial;
+	this.year = year;
+  this.header = ko.observable();
+  this.header('<h1>'+ this.name+' <small>'+this.year+'</small></h1>');
+	this.weeks = ko.observableArray();
+	for (var i = 0; i < weeks.length; i++) {
+       this.weeks.push(new Week(weeks[i].days, weeks[i].marginLeft,weeks[i].marginRight));
+	}
+}
+var Week = function(days,ml,mr) {
+    this.marginLeft = ml;
+    this.marginRight = mr;
+    this.days = ko.observableArray(days);
+}
+var date = new Date();
+
+var viewModel = {
+    currMonth: date.getMonth() + 1,
+    currDay: date.getDate(),
+    months: [
+              new Month('Ágúst',8,2016,w8),
+              new Month('September',9,2016,w9),
+              new Month('Október',10,2016,w10),
+              new Month('Nóvember',11,2016,w11),
+              new Month('Desember',12,2016,w12),
+              new Month('Janúar',1,2017,w1),
+              new Month('Febrúar',2,2017,w2),
+              new Month('Mars',3,2017,w3),
+              new Month('Apríl',4,2017,w4),
+              new Month('Maí',5,2017,w5)
+            ]
+};
+ 
+ko.applyBindings(viewModel);
+window.location.hash = viewModel.currMonth;
+</script>
+
+</body>
