@@ -27,7 +27,7 @@ d['8-25'] = {'tegund': "kennsludagur", 'specials': []}
 d['8-26'] = {'tegund': "kennsludagur", 'specials': [("Nýnemadagur","glyphicon glyphicon-user")]}
 d['8-27'] = {'tegund': "helgi", 'specials': []}
 d['8-28'] = {'tegund': "helgi", 'specials': []}
-d['8-29'] = {'tegund': "kennsldagur", 'specials': []}
+d['8-29'] = {'tegund': "kennsludagur", 'specials': []}
 d['8-30'] = {'tegund': "kennsludagur", 'specials': [("Foreldrafundur","glyphicon glyphicon-blackboard")]}
 d['8-31'] = {'tegund': "kennsludagur", 'specials': []}
 
@@ -42,7 +42,7 @@ d['9-8'] = {'tegund': "kennsludagur", 'specials': []}
 d['9-9'] = {'tegund': "kennsludagur", 'specials': [("Eindagi áfangaúrsagnar", "glyphicon glyphicon-alert")]}
 d['9-10'] = {'tegund': "helgi", 'specials': []}
 d['9-11'] = {'tegund': "helgi", 'specials': []}
-d['9-12'] = {'tegund': "kennsludagur", 'specials': []}
+d['9-12'] = {'tegund': "kennsludagur", 'specials': [("Eindagi vinnumats","glyphicon glyphicon-alert")]}
 d['9-13'] = {'tegund': "kennsludagur", 'specials': []}
 d['9-14'] = {'tegund': "kennsludagur", 'specials': []}
 d['9-15'] = {'tegund': "kennsludagur", 'specials': []}
@@ -92,7 +92,7 @@ d['10-27'] = {'tegund': "kennsludagur", 'specials': []}
 d['10-28'] = {'tegund': "kennsludagur", 'specials': []}
 d['10-29'] = {'tegund': "helgi", 'specials': []}
 d['10-30'] = {'tegund': "helgi", 'specials': []}
-d['10-31'] = {'tegund': "kennsludagur", 'specials': []}
+d['10-31'] = {'tegund': "kennsludagur", 'specials': [("Gildistími kjarasamnings rennur út","glyphicon glyphicon-trash")]}
 
 d['11-1'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-2'] = {'tegund': "kennsludagur", 'specials': []}

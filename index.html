@@ -76,6 +76,14 @@ html, body {
   float: left;
   padding-left: 0%;
 }
+
+.eventsDiv .glyphicon {
+	color: black;
+}
+
+.tooltip-inner {
+  max-width: 100%;
+}
 @media screen and (max-width: 600px) {
   .month {
   margin-left: 1%;
@@ -95,7 +103,7 @@ html, body {
   </div>
   <div class="month" data-bind="foreach: weeks">
   <div class="week" data-bind="foreach: days, style:{'margin-right':marginRight,'margin-left':marginLeft}">
-    <div class="day thumbnail" data-bind="style:{'background-color': tegund=='helgi'? 'rgba(255,0,0,0.05)':(tegund=='starfsdagur'? 'rgba(255,255,0,0.1)':(tegund=='kennsludagur'? 'rgba(0,255,0,0.1)':(tegund=='profadagur'? 'rgba(0,0,255,0.1)':'transparent'))),'border-color': month==$root.currMonth ? (day==$root.currDay ? 'blue': 'none'): 'none','border-width': month==$root.currMonth ? (day==$root.currDay ? '5px': '1px'): '1px'}">
+    <div class="day thumbnail" data-bind="style:{'background-color': tegund=='helgi'? 'rgba(255,0,0,0.05)':(tegund=='starfsdagur'? 'rgba(255,255,0,0.1)':(tegund=='kennsludagur'? 'rgba(0,255,0,0.1)':(tegund=='profadagur'? 'rgba(0,0,255,0.1)':'transparent'))),'border-color': month==$root.currMonth ? (day==$root.currDay ? 'red': 'none'): 'none','border-width': month==$root.currMonth ? (day==$root.currDay ? '1px': '1px'): '1px'}">
       <div class="dayDiv" data-bind="text: day">
       </div>
       <div class="eventsDiv" data-bind="foreach: specials">
@@ -127,6 +135,9 @@ var Week = function(days,ml,mr) {
     this.days = ko.observableArray(days);
 }
 var date = new Date();
+$(document).ready(function(){
+    $('.eventsDiv .glyphicon').tooltip({trigger: "hover click", placement: "bottom", html: true});
+});
 
 var viewModel = {
     currMonth: date.getMonth() + 1,
@@ -147,6 +158,7 @@ var viewModel = {
  
 ko.applyBindings(viewModel);
 window.location.hash = viewModel.currMonth;
+
 </script>
 
 </body>

@@ -77,8 +77,11 @@ for month in months:
                else:
                    spec = '['
                    for special in dayJSON['specials']:
-                       
-                       spec += specialTemplate % (special[0],special[1])
+                       titleTemplate = ''
+                       for special2 in dayJSON['specials']:
+                           titleTemplate += "<h4>%s</h4>" % special2[0]
+                           
+                       spec += specialTemplate % (titleTemplate,special[1])
                        spec += ','
                    spec = spec[:-1]
                    spec += ']'
