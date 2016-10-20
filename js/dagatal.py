@@ -30,7 +30,7 @@ d['8-26'] = {'tegund': "kennsludagur", 'specials': [("Nýnemadagur","glyphicon g
 d['8-27'] = {'tegund': "helgi", 'specials': []}
 d['8-28'] = {'tegund': "helgi", 'specials': []}
 d['8-29'] = {'tegund': "kennsludagur", 'specials': []}
-d['8-30'] = {'tegund': "kennsludagur", 'specials': [("Foreldrafundur","glyphicon glyphicon-blackboard")]}
+d['8-30'] = {'tegund': "kennsludagur", 'specials': [("Foreldrafundur","glyphicon glyphicon-blackboard"),("Herdís á afmæli","glyphicon glyphicon-heart")]}
 d['8-31'] = {'tegund': "kennsludagur", 'specials': []}
 
 d['9-1'] = {'tegund': "kennsludagur", 'specials': [("Haustferð nýnema","glyphicon glyphicon-tent")]}
@@ -95,9 +95,9 @@ d['10-25'] = {'tegund': "kennsludagur", 'specials': []}
 d['10-26'] = {'tegund': "kennsludagur", 'specials': []}
 d['10-27'] = {'tegund': "kennsludagur", 'specials': []}
 d['10-28'] = {'tegund': "kennsludagur", 'specials': []}
-d['10-29'] = {'tegund': "helgi", 'specials': []}
+d['10-29'] = {'tegund': "helgi", 'specials': [("Alþingiskosningar","glyphicon glyphicon-flag")]}
 d['10-30'] = {'tegund': "helgi", 'specials': []}
-d['10-31'] = {'tegund': "kennsludagur", 'specials': [("Gildistími kjarasamnings rennur út","glyphicon glyphicon-file"), ("Hrekkjavaka","glyphicon glyphicon-eye-open")]}
+d['10-31'] = {'tegund': "kennsludagur", 'specials': [("Frestur til þess að sækja um sérúrræði í lokaprófum rennur út.","glyphicon glyphicon-alert"),("Gildistími kjarasamnings rennur út","glyphicon glyphicon-file"), ("Hrekkjavaka","glyphicon glyphicon-eye-open")]}
 
 d['11-1'] = {'tegund': "kennsludagur", 'specials': [("Allraheilagramessa","glyphicon glyphicon-fire")]}
 d['11-2'] = {'tegund': "kennsludagur", 'specials': []}
@@ -109,17 +109,17 @@ d['11-7'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-8'] = {'tegund': "kennsludagur", 'specials': [("Baráttudagur gegn einelti","glyphicon glyphicon-globe")]}
 d['11-9'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-10'] = {'tegund': "kennsludagur", 'specials': []}
-d['11-11'] = {'tegund': "kennsludagur", 'specials': []}
+d['11-11'] = {'tegund': "kennsludagur", 'specials': [("Frestur til þess að ganga frá vali rennur út.","glyphicon glyphicon-alert")]}
 d['11-12'] = {'tegund': "helgi", 'specials': []}
 d['11-13'] = {'tegund': "helgi", 'specials': [("Feðradagurinn","glyphicon glyphicon-globe")]}
 d['11-14'] = {'tegund': "kennsludagur", 'specials': [("Starfsmannafundur kl. 8:15", "glyphicon glyphicon-bell")]}
-d['11-15'] = {'tegund': "kennsludagur", 'specials': []}
+d['11-15'] = {'tegund': "kennsludagur", 'specials': [("Umsóknarfrestur í A-deild Vísindasjóðs rennur út","glyphicon glyphicon-alert")]}
 d['11-16'] = {'tegund': "kennsludagur", 'specials': [("Dagur íslenskrar tungu","glyphicon glyphicon-book")]}
 d['11-17'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-18'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-19'] = {'tegund': "helgi", 'specials': []}
 d['11-20'] = {'tegund': "helgi", 'specials': [("Alþjóðadagur barna","glyphicon glyphicon-globe")]}
-d['11-21'] = {'tegund': "kennsludagur", 'specials': []}
+d['11-21'] = {'tegund': "kennsludagur", 'specials': [("Forseti Íslands heimsækir FÁ","glyphicon glyphicon-flag")]}
 d['11-22'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-23'] = {'tegund': "kennsludagur", 'specials': []}
 d['11-24'] = {'tegund': "kennsludagur", 'specials': []}
@@ -134,18 +134,30 @@ d['12-1'] = {'tegund': "kennsludagur", 'specials': [("Síðasti kennsludagur", "
 d['12-2'] = {'tegund': "profadagur", 'specials': [("Námsmatsdagur", "glyphicon glyphicon-pencil"),("Síðasti kennsludagur í fjarnámi", "glyphicon glyphicon-alert")]}
 d['12-3'] = {'tegund': "helgi", 'specials': [("Alþjóðadagur fatlaðra","glyphicon glyphicon-globe")]}
 d['12-4'] = {'tegund': "helgi", 'specials': []}
-d['12-5'] = {'tegund': "profadagur", 'specials': [("Próf hefjast í dagskóla og fjarnámi.", "glyphicon glyphicon-alert")]}
-d['12-6'] = {'tegund': "profadagur", 'specials': []}
-d['12-7'] = {'tegund': "profadagur", 'specials': []}
-d['12-8'] = {'tegund': "profadagur", 'specials': []}
-d['12-9'] = {'tegund': "profadagur", 'specials': []}
+d['12-5'] = {'tegund': "profadagur", 'specials': [('Próf í dagskóla kl. 8:30:<ul=><li>ENSK1UN05</li><li>ÍSLE1GR03</li><li>ÍSLE3BÓ05</li><li>LÍOL2SS05</li><li>STÆR3RH05</li><li>ÞÝSK1AG05</li></ul>',"glyphicon glyphicon-pencil"),
+                                                  ('Próf í dagskóla kl. 11:00:<ul><li>ÍSAN3NB05</li><li>ÍSLE2BS05</li><li>ÍSLE2GM05</li><li>ÍSLE3NB05</li></ul>',"glyphicon glyphicon-pencil")]}
+d['12-6'] = {'tegund': "profadagur", 'specials': [("Próf í dagskóla kl. 8:30<ul><li>EFNA2AM05</li><li>RTGF2GR03</li><li>STÆR1GR05</li><li>STÆR1RH03</li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("Próf í dagskóla kl. 11:00 <ul><li>FRAN1AU05</li><li>NÆRI1NN05</li><li>SÁLF3AB05</li><li>SPÆN1AG05</li><li>STÆR2AM05</li><li>SÝKL2SS05</li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("Próf í dagskóla kl. 13:30<ul><li>BÓKF1IB05</li><li>LÍFF2LE05</li><li>STÆR1UN05</li></ul>","glyphicon glyphicon-pencil")]}
+d['12-7'] = {'tegund': "profadagur", 'specials': [("Agnes á afmæli","glyphicon glyphicon-heart"),
+                                                  ("Próf í dagskóla kl. 8:30<ul><li>DANS2RM03</li><li>ENSK1GR05</li><li>SÁLF1SD05</li><li>SJÚK2MS05</li><li>SPÆN1AU05</li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("Próf í dagskóla kl. 11:00 <ul><li>ENSK2LO05</li><li>ENSK2OB05</li><li>ENSK3SA05</li></ul>","glyphicon glyphicon-pencil")]}
+d['12-8'] = {'tegund': "profadagur", 'specials': [("Próf í dagskóla kl. 8:30 <ul><li>ÁEFR2TF05</li><li>EÐLI2AV05</li><li>FÉLA2KE05</li><li>FÉLA3ÞR05</li><li>ÍSAN3BÓ05</li><li>ÍSLE1GR05</li><li>TAMS3TT05</li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("Próf í dagskóla kl. 11:00 <ul><li>ÍSAN1GR05</li><li>ÍSLE2GM03</li><li>SJÚK2GH05</li><li>STÆR2HV05</li><li>STÆR3FD05</li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("Próf í dagskola kl. 13:30<ul><li>RAUN1EE05</li><li>SAGA1FB05</li></ul>","glyphicon glyphicon-pencil")]}
+d['12-9'] = {'tegund': "profadagur", 'specials': [("Próf í dagskóla kl. 8:30 <ul><li>EÐLI2GR05</li><li>ENSK1GR03</li><li>FJMÁ2FF05</li><li>HJÚK1AG05</li><li>LAND2AU05</li><li>RAUN1LÍ05</li><li>SÁLF2AA05</li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("Próf í dagskóla kl. 11:00 <ul><li>DANS1GR03</li><li>DANS1GR05</li><li>DANS2RM05</li><li>HJÚK3FG05</li><li>SAGA3KM05<li></ul>","glyphicon glyphicon-pencil"),
+                                                  ("<span>Sjúkrapróf dagskóla kl. 13:30</span><br><span>vegna 5., 6. og 7. des.</span>","glyphicon glyphicon-pencil")]}
 d['12-10'] = {'tegund': "helgi", 'specials': [("Mannréttindadagurinn","glyphicon glyphicon-globe")]}
 d['12-11'] = {'tegund': "helgi", 'specials': []}
-d['12-12'] = {'tegund': "profadagur", 'specials': []}
-d['12-13'] = {'tegund': "profadagur", 'specials': []}
-d['12-14'] = {'tegund': "profadagur", 'specials': [("Endurtektarpróf kl. 8:30", "glyphicon glyphicon-alert"),("Prófsýning og val kl. 11:00-14:00", "glyphicon glyphicon-blackboard")]}
-d['12-15'] = {'tegund': "starfsdagur", 'specials': []}
-d['12-16'] = {'tegund': "starfsdagur", 'specials': []}
+d['12-12'] = {'tegund': "profadagur", 'specials': [("Próf í dagskóla kl. 8:30<ul><li>ENSK2LO03</li><li>FRAN1AF05</li><li>FRAN1AG05</li><li>HJÚK3ÖH05</li><li>ÍÞRÓ1GH03</li><li>LÍOL2IL05</li><li>SPÆN1AF05</li><li>ÞÝSK1AF05</li><li>ÞÝSK1AU05</li></ul>","glyphicon glyphicon-pencil"),
+                                                   ("Próf í dagskóla kl. 11:00 <ul><li>HAGF2AÞ05</li><li>ÍSLE1UN05</li><li>SAGA2LS05</li><li>SAGA2NS05</li></ul>","glyphicon glyphicon-pencil")]}
+d['12-13'] = {'tegund': "profadagur", 'specials': [("Próf í dagskóla kl. 8.30 <ul><li>JARÐ2JÍ05</li><li>KVIK2HS05</li><li>RAUN1JA05</li><li>RAUN1LJ05</li><li>SIÐF2SF05</li></ul>","glyphicon glyphicon-pencil"),
+                                                   ("Próf í dagskóla kl. 11.00 <ul><li>EFNA2GE05</li><li>HAGF3FR05</li><li>HBFR1HH05</li><li>SAGA1MF05</li></ul>","glyphicon glyphicon-pencil")]}
+d['12-14'] = {'tegund': "profadagur", 'specials': [("Sjúkrapróf vegna prófa 8. og 9. des.","glyphicon glyphicon-pencil"),
+                                                   ("Sjúkrapróf vegna prófa 12. og 13. des.","glyphicon glyphicon-pencil")]}
+d['12-15'] = {'tegund': "profadagur", 'specials': []}
+d['12-16'] = {'tegund': "profadagur", 'specials': [("Endurtektarpróf kl. 8:30", "glyphicon glyphicon-alert"),("Prófsýning og val kl. 11:00-14:00", "glyphicon glyphicon-blackboard")]}
 d['12-17'] = {'tegund': "starfsdagur", 'specials': [("Æfing fyrir brautskráningu kl. 16:00", "glyphicon glyphicon-bullhorn")]}
 d['12-18'] = {'tegund': "starfsdagur", 'specials': [("Útskrift kl. 13:00","glyphicon glyphicon-education")]}
 d['12-19'] = {'tegund': "helgi", 'specials': []}
@@ -205,7 +217,7 @@ d['2-8'] = {'tegund': "kennsludagur", 'specials': []}
 d['2-9'] = {'tegund': "kennsludagur", 'specials': []}
 d['2-10'] = {'tegund': "kennsludagur", 'specials': []}
 d['2-11'] = {'tegund': "helgi", 'specials': []}
-d['2-12'] = {'tegund': "helgi", 'specials': []}
+d['2-12'] = {'tegund': "helgi", 'specials': [("Edda Ben á afmæli","glyphicon glyphicon-heart")]}
 d['2-13'] = {'tegund': "kennsludagur", 'specials': []}
 d['2-14'] = {'tegund': "kennsludagur", 'specials': [("Valentínusardagurinn","glyphicon glyphicon-heart")]}
 d['2-15'] = {'tegund': "kennsludagur", 'specials': []}
@@ -276,7 +288,7 @@ d['4-18'] = {'tegund': "helgi", 'specials': [("Páskafrí", "glyphicon glyphicon
 d['4-19'] = {'tegund': "kennsludagur", 'specials': []}
 d['4-20'] = {'tegund': "helgi", 'specials': [("Sumardagurinn fyrsti", "glyphicon glyphicon-home")]}
 d['4-21'] = {'tegund': "kennsludagur", 'specials': []}
-d['4-22'] = {'tegund': "helgi", 'specials': []}
+d['4-22'] = {'tegund': "helgi", 'specials': [("Sæþór á afmæli","glyphicon glyphicon-heart")]}
 d['4-23'] = {'tegund': "helgi", 'specials': []}
 d['4-24'] = {'tegund': "kennsludagur", 'specials': []}
 d['4-25'] = {'tegund': "kennsludagur", 'specials': []}
